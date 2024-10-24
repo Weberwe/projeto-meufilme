@@ -1,0 +1,58 @@
+
+h1{ 
+    background: red;
+}
+
+.menu_est {
+    font-size: 22px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    list-style-type: circle; 
+    padding: 0;
+    height: 30px;
+    word-spacing: 20px;
+    font-weight: 900;
+    border: none;
+
+    }
+    
+.menu_est li {
+    align-items: center; 
+    display: inline;
+    margin-right: 10px; 
+}
+
+.menu_est a {
+    text-decoration: none;  
+    color: red;
+}
+
+.tabela {
+    
+    border:solid black; 
+    text-align: center; 
+    display: inline-block ; 
+    margin: 10px 0px 0px 55px;
+    padding: 0;
+
+}
+
+.tabela th {
+    margin: O;
+    text-align: left;
+    width:160px;
+    padding: 0;
+    vertical-align: top;
+    font-weight: 100;
+
+}
+
+.tabela td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+}

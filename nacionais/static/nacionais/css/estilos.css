@@ -1,0 +1,58 @@
+
+h1{ 
+    background: green;
+}
+
+.menu_est {
+    font-size: 22px;
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    list-style-type: circle; /* Remove os marcadores da lista */
+    padding: 0; /* Remove o preenchimento padrão */
+    height: 30px;
+    word-spacing: 20px;
+    font-weight: 900;
+    border: none;
+
+    }
+    
+.menu_est li {
+    align-items: center; 
+    display: inline; /* Exibe os itens em linha */
+    margin-right: 10px; /* Espaço entre os itens */
+}
+
+.menu_est a {
+    text-decoration: none; /* Remove o sublinhado */
+    color: rgb(10, 214, 10); /* Define a cor do link (ajuste conforme necessário) */
+}
+
+.tabela {
+    
+    border:solid black; 
+    text-align: center; 
+    display: inline-block ; 
+    margin: 10px 0px 0px 55px;
+    padding: 0;
+
+}
+
+.tabela th {
+    margin: O;
+    text-align: left;
+    width:160px;
+    padding: 0;
+    vertical-align: top;
+    font-weight: 100;
+
+}
+
+.tabela td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    vertical-align: text-top;
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,26 @@
+{% extends 'global/paginas/base_inicio.html' %}
+{% load static %}
+
+{% block css_app %}
+<link rel="stylesheet" href="{% static 'estrangeiros/css/estilos.css' %}">;
+{% endblock css_app %}
+
+
+{% block titulo_app %} 
+{% include 'estrangeiros/parciais/head.html' %} 
+{% endblock titulo_app %}
+
+{% block menu_app %}
+{% include 'estrangeiros/parciais/menu.html' %}
+{% endblock menu_app %}
+
+
+{% block tabela_app %}
+    {% for item in todos %}
+    {% if item.origem == 'Filme Estrangeiro' %}
+    {% if item.genero == 'Terror' %}
+    {% include 'estrangeiros/parciais/tabela.html' %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+{% endblock tabela_app %}

@@ -1,0 +1,26 @@
+{% extends 'global/paginas/base_inicio.html' %}
+{% load static %}
+
+{% block css_app %}
+<link rel="stylesheet" href="{% static 'nacionais/css/estilos.css' %}">;
+{% endblock css_app %}
+
+
+{% block titulo_app %} 
+{% include 'nacionais/parciais/head.html' %} 
+{% endblock titulo_app %}
+
+{% block menu_app %}
+{% include 'nacionais/parciais/menu.html' %}
+{% endblock menu_app %}
+
+
+{% block tabela_app %}
+    {% for item in todos %}
+    {% if item.origem == 'Filme Nacional' %}
+    {% if item.genero == 'Terror' %}
+    {% include 'nacionais/parciais/tabela.html' %}
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+{% endblock tabela_app %}

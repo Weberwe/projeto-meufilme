@@ -1,0 +1,26 @@
+{% load static %}
+<table class="tabela">
+    <tr>
+        <th >
+            <a href="{% url 'nac:detalhes' item.genero item.titulo %}">
+            <img src="{{item.imagem.url}}" width="200px"></th>
+           </a>
+
+        <th>
+            <p> <strong>{{item.origem}}</strong></p> 
+            <p> Titulo: <strong>{{item.titulo}}</strong> </p> 
+            <p> Gênero: <strong>{{item.genero}}</strong> </p>
+            <p> Lançamento: <strong>{{item.data}}</strong> </p> 
+            <p> Diretor:<strong> {{item.diretor.nome}}</strong> <strong>{{item.diretor.sobrenome}}</strong> </p> 
+        </th>
+    </tr>  
+     <tr >
+        <td colspan="2" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, aliquam iusto architecto praesentium labore dolor quaerat voluptate suscipit incidunt aspernatur quod minus voluptatum pariatur? Assumenda, libero quas! Odio, officiis expedita?</p> 
+        </td>
+    </tr>
+</table>
+
+
+
+
+

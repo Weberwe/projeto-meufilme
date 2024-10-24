@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <link rel="stylesheet" href="{% static 'global/css/estilos.css' %}">
+
+    {% block css_app %}{% endblock css_app %}  
+
+    {% block head_app %}{% endblock head_app %}
+<body>
+
+    {%include 'global/parciais/titulo.html' %} 
+    
+    {% block menu_app %}{% endblock menu_app %}
+
+    {% block tabela_app %}{% endblock tabela_app %}
+
+    {% block imagem_cinema %}{% endblock imagem_cinema %}
+       
+</body>
+</html>

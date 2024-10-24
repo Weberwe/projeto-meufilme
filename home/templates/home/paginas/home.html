@@ -1,0 +1,14 @@
+{% extends 'global/paginas/base_inicio.html' %}
+{% load static %}
+
+{% block css_app %}
+<link rel="stylesheet" href="{% static 'home/css/estilos.css' %}">
+{% endblock css_app %}  
+
+{% block head_app %} 
+{% include 'home/parciais/head.html' %} 
+{% endblock head_app %} 
+
+{% block imagem_cinema %}
+   {% include 'home/parciais/img.html' %} 
+{% endblock imagem_cinema %}
